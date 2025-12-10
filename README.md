@@ -2,7 +2,7 @@
 
 ## 💡 Project Overview
 
-The **AI Systematic Review & Evidence Contradiction Engine** is a full-stack application designed to automate the initial stages of a systematic review. By leveraging the **Google Gemini LLM** (via the FastAPI backend), the system extracts key clinical data (PICO-O) from multiple research papers and automatically identifies conflicting evidence, displaying results in high-value, regulatory interpretation-ready visualizations.
+The **AI Systematic Review & Evidence Contradiction Engine** is a full-stack application designed to automate the initial stages of a systematic review. By leveraging the **Google Gemini LLM** (via the FastAPI backend), the system extracts key clinical data from multiple research papers and automatically identifies conflicting evidence, displaying results in high-value, regulatory interpretation-ready visualizations.
 
 This project demonstrates expertise in LLM Prompt Engineering, Asynchronous Processing, Pydantic Data Modeling, and modern React visualization.
 
@@ -15,7 +15,7 @@ This project demonstrates expertise in LLM Prompt Engineering, Asynchronous Proc
 | **Backend (API)** | **Python (FastAPI)** | Manages file uploads, handles Pydantic data validation, and serves as the proxy for the Gemini LLM. |
 | **LLM Engine** | **Google Gemini 2.5 Flash** | Core intelligence for PICO-O extraction, contradiction analysis, and structured numerical data generation. |
 | **Frontend (UI)** | **React.js & Tailwind CSS** | User interface for file uploads, state management, and aesthetic styling. |
-| **Visualization** | **Recharts** (or similar) | Renders the custom Forest Plot and Conflicting Outcome Map. |
+| **Visualization** | **Recharts**  | Renders the custom Forest Plot and Conflicting Outcome Map. |
 | **Deployment** | **Vercel** (Frontend) & **Render** (Backend) | Live hosting for the entire application. |
 
 ---
@@ -39,7 +39,7 @@ The system first presents the overall verdict on the compiled evidence before di
 The LLM synthesizes the findings to rate the quality and consistency of the combined evidence. Here, the evidence is deemed **Strong** due to consistent, statistically significant results.
 
 #### B. Contradiction & Risk Analysis
-The LLM compares the outcomes of the three trials, concluding that the evidence is **consistent** (no contradiction detected), but the Consensus Statement still provides the boilerplate text (an issue resolved by the final prompt fix in the code).
+The LLM compares the outcomes of the three trials, concluding that the evidence is **consistent** (no contradiction detected), but the Consensus Statement still provides the boilerplate text.
 
 <img width="960" height="344" alt="2" src="https://github.com/user-attachments/assets/addcfe02-24b6-4bbb-bfa9-801a0b1482cb" />
 
@@ -48,7 +48,7 @@ The LLM compares the outcomes of the three trials, concluding that the evidence 
 
 ### Step 3: Regulatory Interpretation-Ready Data (PICO-O Consensus Table)
 
-This table is the core regulatory output. It provides the **raw, structured PICO-O elements** extracted directly from the PDFs, including the crucial numerical data (HR, RR, CI) in the Outcome column.
+This table is the core regulatory output. It provides the **raw, structured elements** extracted directly from the PDFs, including the crucial numerical data (HR, RR, CI) in the Outcome column.
 
 <img width="765" height="316" alt="3" src="https://github.com/user-attachments/assets/10454ffa-fdf4-4480-a3ca-cf9c7c50f32c" />
 
@@ -72,4 +72,5 @@ The Forest Plot uses the exact **HR/RR** and **95% CI** values extracted from th
 * **Status:** All three points are clustered to the **left** of the red "No Effect (1.0)" line, visually confirming the statistically significant **Benefit** reported by all trials.
 
 <img width="750" height="196" alt="5" src="https://github.com/user-attachments/assets/70b75f1d-ccc9-4df5-b2ca-dc5cc21b15e0" />
+
 
