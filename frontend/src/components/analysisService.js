@@ -1,6 +1,6 @@
 // frontend/src/components/analysisService.js
 
-const BASE_URL = 'https://ai-systematic-review-evidence.onrender.com'; // Must match your FastAPI URL
+const BASE_URL = 'https://ai-systematic-review-evidence.onrender.com/api'; // Must match your FastAPI URL
 
 /**
  * Extracts PICO-O data from a single PDF file using the /api/extract endpoint.
