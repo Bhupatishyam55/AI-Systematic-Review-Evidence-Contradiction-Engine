@@ -23,7 +23,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  
-        "https://ai-systematic-review-evidence-contr.vercel.app/", # <-- Paste your live Vercel URL here
+        "https://ai-systematic-review-evidence-contr.vercel.app/",
+        "https://ai-systematic-review-evidence-contr.vercel.app" # <-- Paste your live Vercel URL here
     ],
     allow_credentials=True,
     allow_methods=["*"],
