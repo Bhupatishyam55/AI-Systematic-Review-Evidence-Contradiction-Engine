@@ -21,7 +21,10 @@ app = FastAPI(title="AI Systematic Review Engine MVP")
 # Configure CORS (Crucial for React connection)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"], 
+    allow_origins=[
+        "http://localhost:5173",  
+        "https://ai-systematic-review-evidence-contr.vercel.app/", # <-- Paste your live Vercel URL here
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
