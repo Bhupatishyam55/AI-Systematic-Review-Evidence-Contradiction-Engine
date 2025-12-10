@@ -1,0 +1,14 @@
+# Python Environment Files
+.env
+__pycache__/
+*.pyc
+venv/
+/tmp
+
+# IDE files
+.vscode/
+.idea/
+
+# Frontend files (handled in frontend/.gitignore, but good to place here too)
+/frontend/node_modules
+/frontend/dist

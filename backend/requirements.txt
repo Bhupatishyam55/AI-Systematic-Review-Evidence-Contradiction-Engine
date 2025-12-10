@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-multipart  # Required for file uploads
+pydantic
+google-genai      # The official Google GenAI SDK
+aiofiles          # For handling file uploads asynchronously
+python-dotenv     # To load the GEMINI_API_KEY from .env
